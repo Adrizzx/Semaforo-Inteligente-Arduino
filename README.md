@@ -115,7 +115,7 @@ flowchart LR
 
 | Integrante |
 |---|
-| **Marco Adrián Padilla Triviño** ([@Adrizzx](https://github.com/Adrizzx)) |
+| **Marco Adrian Padilla Triviño** ([@Adrizzx](https://github.com/Adrizzx)) |
 | Lenin Antonio Barrionuevo Rodríguez |
 | Angelo Raphael Galarza Manosalvas |
 
