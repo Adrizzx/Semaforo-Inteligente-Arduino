@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚦 Semáforo Inteligente
+# Semáforo Inteligente
 
 ### Sistema embebido con Arduino controlado y monitoreado desde una aplicación de escritorio en C#, con registro en SQLite y estadísticas en tiempo real
 
@@ -16,13 +16,13 @@
 
 ---
 
-## 📖 Descripción
+## Descripción
 
 Semáforo vehicular y peatonal construido sobre **Arduino UNO** que integra hardware real (LEDs, LCD, teclado, buzzer, matriz de LEDs y una memoria **EEPROM AT28C64B** programada a mano para el display de 7 segmentos) con una **aplicación de escritorio en C#** que lo controla por **puerto serial**, guarda cada evento en **SQLite** y genera **gráficas estadísticas** en tiempo real.
 
 El sistema se validó dos veces: en **hardware físico** sobre protoboard y en **simulación completa en Proteus 8** con comunicación serial virtual (COMPIM).
 
-## ✨ Características
+## Características
 
 **Firmware (Arduino)**
 - Ciclo de semáforo vehicular con fase peatonal y temporización configurable.
@@ -38,7 +38,7 @@ El sistema se validó dos veces: en **hardware físico** sobre protoboard y en *
 - Registro persistente de cada cambio en **SQLite**.
 - Ventana de **estadísticas** con gráficas generadas desde la base de datos.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```mermaid
 flowchart LR
@@ -56,7 +56,7 @@ flowchart LR
     KP[Teclado matricial] --> AR
 ```
 
-## 📸 Galería
+## Galería
 
 <table>
   <tr>
@@ -82,7 +82,7 @@ flowchart LR
   <br><sub>Diagrama completo de conexiones</sub>
 </div>
 
-## 🧰 Hardware
+## Hardware
 
 | Componente | Uso |
 |---|---|
@@ -94,7 +94,7 @@ flowchart LR
 | Teclado matricial | Control manual |
 | Buzzer | Señales sonoras por fase |
 
-## 📂 Estructura
+## Estructura
 
 ```
 ├── arduino/semaforoProject/   Firmware (.ino) documentado con tabla de pines
@@ -103,15 +103,15 @@ flowchart LR
 └── media/                     Fotografías y capturas
 ```
 
-## 🚀 Cómo ejecutarlo
+## Cómo ejecutarlo
 
 1. **Firmware:** abrir `arduino/semaforoProject/semaforoProject.ino` en Arduino IDE, instalar las librerías `Keypad`, `LedControl` y `LiquidCrystal_I2C`, y cargar en el Arduino UNO.
 2. **Aplicación:** abrir `desktop-app/SEMAFORO_AVANZADO.sln` en Visual Studio 2022, restaurar paquetes NuGet y ejecutar.
 3. Seleccionar el puerto COM del Arduino y conectar.
 
-📄 El diseño, la codificación de la EEPROM y las pruebas están en el [informe técnico](docs/Informe_Semaforo_Inteligente.pdf).
+ El diseño, la codificación de la EEPROM y las pruebas están en el [informe técnico](docs/Informe_Semaforo_Inteligente.pdf).
 
-## 👥 Equipo
+## Equipo
 
 | Integrante |
 |---|
